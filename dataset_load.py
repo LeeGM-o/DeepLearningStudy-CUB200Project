@@ -1,3 +1,22 @@
+import os
+import torch
+import torch.nn as nn
+from torchvision import transforms, datasets
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from torch.utils.data import Dataset, DataLoader
+import torch.nn.functional as F
+from tqdm.auto import tqdm
+
+# GPU setting
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
+# Pathway setting
+os.chdir("./DL_study")
+os.getcwd()
+
 class CUB_Dataset(Dataset):
     def __init__(self,img_file, label_file, transform=None):
         self.img =np.load(img_file)
