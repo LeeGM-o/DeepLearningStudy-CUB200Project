@@ -12,4 +12,4 @@
 * **Bottleneck block**: Provides stability and efficiency for ResNet training
 * **Full ResNet Structure**: Gradually builds higher-level features to perform final classification
 ## Final Performance
-* Accuracy on CUB validation images: 23.27%
+* Accuracy on CUB validation images: **23.27%**(Baseline: Approximately 10%)
