@@ -7,9 +7,9 @@
 * Specifically designed for bird species classification tasks.
 * Contains 11,788 images across 200 different bird species.
 ## model Architecture
-* *Self-attention*: Learn image global relationships (whole structure, patterns) to determine "where to look"
-* *SEBblock*: Adjust channel-specific importance to determine "what to watch"
-* *Bottleneck block*: Provides reliability and efficiency in ResNet learning
-* *Full ResNet* Structure: Gradually stack higher levels of features to perform the final classification
+* **Self-attention**: Learn image global relationships (whole structure, patterns) to determine "where to look"
+* **SEBblock**: Adjust channel-specific importance to determine "what to watch"
+* **Bottleneck block**: Provides reliability and efficiency in ResNet learning
+* **Full ResNet Structure**: Gradually stack higher levels of features to perform the final classification
 ## Final Performance
 * Accuracy on CUB validation images: 23.27%
