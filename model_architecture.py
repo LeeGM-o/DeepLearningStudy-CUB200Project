@@ -128,7 +128,3 @@ class ResNet(nn.Module):
 # Instantiate the model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = ResNet(BottleneckBlock, [3, 4, 6, 3]).to(device)  # Using Bottleneck block
-
-cub_val_dataset = CUB_Dataset(img_file="./CUB_val_images.npy",
-                                        label_file="./CUB_val_labels.npy",transform=cub_bird_transform)
-cub_val_loader = torch.utils.data.DataLoader(cub_val_dataset, batch_size=BATCH_SIZE, shuffle=False)
