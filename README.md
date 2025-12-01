@@ -6,7 +6,7 @@
 #### Caltech UCSD Birds 200 Dataset (CUB-200)
 * Specifically designed for bird species classification tasks.
 * Contains 11,788 images across 200 different bird species.
-## model Architecture
+## Model Architecture
 * **Self-attention**: Learns global image relationships (overall structure, patterns) to determine “where to look”
 * **SEBblock**: Adjusts channel-wise importance to determine “what to look at”
 * **Bottleneck block**: Provides stability and efficiency for ResNet training
